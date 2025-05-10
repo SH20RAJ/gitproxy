@@ -2,6 +2,9 @@
 	"name": "gitproxy",
 	"version": "0.1.0",
 	"private": true,
+	"engines": {
+		"node": "^18.18.0 || ^19.8.0 || >= 20.0.0"
+	},
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
@@ -12,6 +15,8 @@
 		"deploy": "npm run pages:build && wrangler pages deploy"
 	},
 	"dependencies": {
+		"axios": "^1.9.0",
+		"crypto-js": "^4.2.0",
 		"next": "15.3.1",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0"
