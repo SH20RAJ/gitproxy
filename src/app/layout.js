@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,12 +26,12 @@ export default function RootLayout({ children }) {
       >
         <header className="bg-gray-900 text-white p-4 shadow-md">
           <div className="container mx-auto flex justify-between items-center">
-            <a href="/" className="text-2xl font-bold">GitProxy</a>
+            <Link href="/" className="text-2xl font-bold">GitProxy</Link>
             <nav>
               <ul className="flex space-x-4">
-                <li><a href="/" className="hover:text-gray-300">Home</a></li>
-                <li><a href="/#how-it-works" className="hover:text-gray-300">How It Works</a></li>
-                <li><a href="https://github.com/SH20RAJ/gitproxy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">GitHub</a></li>
+                <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
+                <li><Link href="/#how-it-works" className="hover:text-gray-300">How It Works</Link></li>
+                <li><Link href="https://github.com/SH20RAJ/gitproxy" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">GitHub</Link></li>
               </ul>
             </nav>
           </div>
@@ -48,9 +49,9 @@ export default function RootLayout({ children }) {
               <div>
                 <h3 className="text-lg font-semibold mb-2">Links</h3>
                 <ul className="space-y-1 text-gray-400">
-                  <li><a href="/" className="hover:text-white">Home</a></li>
-                  <li><a href="https://github.com/SH20RAJ/gitproxy" className="hover:text-white">GitHub</a></li>
-                  <li><a href="https://github.com/SH20RAJ/gitproxy/issues" className="hover:text-white">Report Issues</a></li>
+                  <li><Link href="/" className="hover:text-white">Home</Link></li>
+                  <li><Link href="https://github.com/SH20RAJ/gitproxy" className="hover:text-white">GitHub</Link></li>
+                  <li><Link href="https://github.com/SH20RAJ/gitproxy/issues" className="hover:text-white">Report Issues</Link></li>
                 </ul>
               </div>
             </div>
