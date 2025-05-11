@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[calc(100vh-300px)] py-20">
@@ -7,12 +9,12 @@ export default function NotFound() {
         The page you are looking for might have been removed, had its name changed,
         or is temporarily unavailable.
       </p>
-      <a
+      <Link
         href="/"
         className="btn btn-primary"
       >
         Return to Home
-      </a>
+      </Link>
     </div>
   );
 }
